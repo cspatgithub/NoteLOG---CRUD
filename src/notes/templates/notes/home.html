@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <p class="lead text-primary">Your Notes</p>
+    {% for note in notes %}
+        <a href="{{note.get_absolute_url}}" class="d-block text-dark note-box border-bottom p-2 m-0">
+            <p class="m-0"><span class="note-title">{{note.title}}</span> - {{note.text}}</p>
+        </a>
+    {% endfor %}
+{% endblock content %}
