@@ -7,7 +7,7 @@ git clone https://github.com/cspatgithub/NoteLOG---CRUD.git
 #### Create a virtualenv for the project(Python virtualenv):
 - py -m venv env
 - env\scripts\activate
-- pip install django django-crispy forms
+- pip install django django-crispy-forms
 
 #### Run migrations and development server:
 - cd src
